@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+<title>PencilArtAssault</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+
+
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+
+
+
+
+        <title>PencilArtAssault</title>
+           </head>
+<style>
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+   
+    
+    /* Background styles */
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+</style>
+<section class="hero">
+            <div class="hero-inner">
+<figure class="logo animated fadeInDown delay-07s">
+        	<a href="#"><img src="img/favicon.png" alt=""></a>	
+        </figure>	
+                
+        <h1 class="animated fadeInDown delay-07s">Welcome To PencilArtAssault</h1>
+      <h1 class="animated fadeInDown delay-07s">This website serves as an archive for all the files tested and used in my videos!</h1>
+    <a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+
+                
+            </div>
+        </section>
+<nav class="main-nav-outer" id="test"><!--main-nav-start-->
+	<div class="container">
+        <ul class="main-nav">
+        	<li><a href="#header">Home</a></li>
+            <li><a href="#service">ISO files (coming soon)</a></li>
+            <li><a href="#Portfolio">Malware</a></li>
+            <li><a href="bloom11.html">Bloom11</a></li>
+            
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav>
+<section class="main-section" id="service"><!--main-section-start-->
+	<div class="container">
+    	<h2></h2>
+    	<h6>Pros:</h6>
+        <div class="row">
+        	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+            	<div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fab fa-windows"></i>
+                    </div>
+                	<div class="service-list-col2">
+			
+                        <h3>What's in here?</h3>
+                        <p>This website contains everything, from iso files to malware samples needed to get you up and running with virtual machines.</p>
+			<p>Try out Bloom 11</p><li><a href="bloom11.html">here</a></li>
+ 			
+                    </div>
+                </div>
+                <div class="row">
+        	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+            	<div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="faB fa-shield-alt"></i>
+                    </div>
+                	
+                    </div>
+                </div>
+            
+                
+            
+                </div>
+            </div>
+            <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+            	<img src="img/windows 11.png" alt="">
+            </figure>
+        
+        </div>
+	</div>
+</section>
+<section class="business-talking">
+	<div class="container">
+        <h2>Download Malware samples</h2><h2><a href="https://github.com/MalikIdreesHasanKhan/MalwareDatabase/archive/refs/heads/master.zip">here.</h2>
+<h2>Please test it responsibly on a virtual machine, I am on no accounts, responsible for misuse of the malware samples provided here</h2>
+       
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $('#test').scrollToFixed();
+        $('.res-nav_click').click(function(){
+            $('.main-nav').slideToggle();
+            return false    
+            
+        });
+        
+    });
+</script>
+
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+  </script>
+
+
+<script type="text/javascript">
+	$(window).load(function(){
+		
+		$('.main-nav li a, .servicelink').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 102
+			}, 1500,'easeInOutExpo');
+			/*
+			if you don't want to use the easing effects:
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1000);
+			*/
+      if ($(window).width() < 768 ) { 
+        $('.main-nav').hide(); 
+      }
+			event.preventDefault();
+		});
+	})
+</script>
+
+<script type="text/javascript">
+
+$(window).load(function(){
+  
+  
+  var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+
+  
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+  
+  $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+        .isotope('reLayout');
+    }
+    
+  }).smartresize(); // trigger resize to set container width
+  $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+			
+            filter: selector,
+         });
+         return false;
+    });
+  
+});
+
+</script>
+
+</body>
+
+</html>
